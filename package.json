@@ -20,7 +20,8 @@
     "build": "build-storybook",
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=26cd139ba741"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +50,7 @@
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.3.11",
     "babel-loader": "^8.2.2",
+    "chromatic": "^6.0.4",
     "css-loader": "^6.4.0",
     "sass": "^1.42.1",
     "sass-loader": "^12.2.0",

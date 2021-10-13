@@ -41,3 +41,11 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+
+export const AllCaps = Template.bind({});
+AllCaps.args = {
+  
+  label: 'Button',
+  primary: true,
+  allCaps: true
+};

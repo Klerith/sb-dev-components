@@ -17,7 +17,11 @@ interface ButtonProps {
   /**
    * Button contents
    */
-  label: string;
+  allCaps?: boolean;
+  /**
+   * Do you want capitalized or not
+   */
+   label: string;
   /**
    * Optional click handler
    */
@@ -31,6 +35,7 @@ export const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
+  allCaps = false,
   label,
   ...props
 }: ButtonProps) => {
@@ -42,7 +47,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      { allCaps ? label.toUpperCase() : label }
     </button>
   );
 };
