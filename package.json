@@ -69,5 +69,9 @@
   ],
   "release": {
     "branches": ["main"]
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js"
 }
