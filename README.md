@@ -13,3 +13,6 @@ BREAKING CHANGE: The graphiteWidth option has been removed.
 
 # generate index.d.ts
 https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html
+
+# Move the CSS
+yarn add -D rimraf copyfiles

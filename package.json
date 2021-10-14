@@ -10,13 +10,18 @@
   },
   "homepage": "https://fernando-herrera.com",
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "files": [
     "dist",
     "src"
   ],
   "main": "dist/index.js",
+  "peerDependencies": {
+    "react": ">=16"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -34,11 +39,14 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "tsc",
+    "build": "yarn clean && tsc && yarn copy-files",
+    "build:old": "tsc",
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=26cd139ba741"
+    "chromatic": "npx chromatic --project-token=26cd139ba741",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "eslintConfig": {
     "extends": [
@@ -68,7 +76,9 @@
     "@storybook/react": "^6.3.11",
     "babel-loader": "^8.2.2",
     "chromatic": "^6.0.4",
+    "copyfiles": "^2.4.1",
     "css-loader": "^6.4.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.42.1",
     "sass-loader": "^12.2.0",
     "semantic-release": "^18.0.0",
