@@ -9,7 +9,8 @@
       "esnext"
     ],
     "declaration": true,
-    "emitDeclarationOnly": true,
+    // "emitDeclarationOnly": false,
+    "noEmit": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
