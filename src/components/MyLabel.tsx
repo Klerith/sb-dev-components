@@ -1,7 +1,7 @@
 // import styles from './my-styles.module.css';
 import './my-styles.module.css';
 
-interface Props {
+export interface Props {
   label: string;
   size: 'normal'|'h1'| 'h2' |'h3';
   color: 'primary'|'secondary'|'tertiary';

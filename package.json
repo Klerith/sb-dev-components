@@ -1,6 +1,22 @@
 {
   "name": "fh-storybook-dev-components",
+  "author": "Fernando Herrera",
   "version": "0.2.4",
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/Klerith/sb-dev-components",
+    "type": "git"
+  },
+  "homepage": "https://fernando-herrera.com",
+  "release": {
+    "branches": ["main"]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "dist/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -65,12 +81,5 @@
     "@semantic-release/github",
     "@semantic-release/npm",
     "@semantic-release/git"
-  ],
-  "release": {
-    "branches": ["main"]
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "dist/index.js"
+  ]
 }
